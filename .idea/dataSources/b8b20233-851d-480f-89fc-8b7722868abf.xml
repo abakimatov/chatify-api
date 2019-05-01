@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="chatify_dev@localhost">
+  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.15">
+    <root id="1">
+      <ServerVersion>11.1</ServerVersion>
+    </root>
+    <database id="2" parent="1" name="chatify">
+      <ObjectId>35212</ObjectId>
+      <StateNumber>1913</StateNumber>
+      <Owner>aleksandr</Owner>
+      <IntrospectionStateNumber>1932</IntrospectionStateNumber>
+    </database>
+    <database id="3" parent="1" name="chatify_dev">
+      <ObjectId>35213</ObjectId>
+      <StateNumber>1914</StateNumber>
+      <Owner>alex</Owner>
+      <IntrospectionStateNumber>1941</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+      <Relations>sequence|table|35242|35244|1
+</Relations>
+    </database>
+    <database id="4" parent="1" name="dansfestivals_development">
+      <ObjectId>34826</ObjectId>
+      <StateNumber>1810</StateNumber>
+      <Owner>aleksandr</Owner>
+    </database>
+    <database id="5" parent="1" name="dansfestivals_test">
+      <ObjectId>34973</ObjectId>
+      <StateNumber>1833</StateNumber>
+      <Owner>aleksandr</Owner>
+    </database>
+    <database id="6" parent="1" name="dukes_development">
+      <ObjectId>16385</ObjectId>
+      <StateNumber>571</StateNumber>
+      <Owner>alex</Owner>
+    </database>
+    <database id="7" parent="1" name="dukes_test">
+      <ObjectId>16386</ObjectId>
+      <StateNumber>572</StateNumber>
+      <Owner>alex</Owner>
+    </database>
+    <database id="8" parent="1" name="education">
+      <ObjectId>35123</ObjectId>
+      <StateNumber>1874</StateNumber>
+      <Owner>alex</Owner>
+    </database>
+    <database id="9" parent="1" name="jeterp">
+      <ObjectId>18112</ObjectId>
+      <StateNumber>1258</StateNumber>
+      <Owner>alex</Owner>
+    </database>
+    <database id="10" parent="1" name="jeterp_private">
+      <ObjectId>35116</ObjectId>
+      <StateNumber>1864</StateNumber>
+      <Owner>alex</Owner>
+    </database>
+    <database id="11" parent="1" name="jeterp_test">
+      <ObjectId>18113</ObjectId>
+      <StateNumber>1259</StateNumber>
+      <Owner>alex</Owner>
+    </database>
+    <database id="12" parent="1" name="kong">
+      <ObjectId>26305</ObjectId>
+      <StateNumber>1495</StateNumber>
+      <Owner>kong</Owner>
+    </database>
+    <database id="13" parent="1" name="planifica">
+      <ObjectId>34662</ObjectId>
+      <StateNumber>1749</StateNumber>
+      <Owner>alex</Owner>
+    </database>
+    <database id="14" parent="1" name="postgres">
+      <ObjectId>13364</ObjectId>
+      <Comment>default administrative connection database</Comment>
+      <StateNumber>569</StateNumber>
+      <Owner>aleksandr</Owner>
+    </database>
+    <database id="15" parent="1" name="test_dev">
+      <ObjectId>34661</ObjectId>
+      <StateNumber>1728</StateNumber>
+      <Owner>postgres</Owner>
+    </database>
+    <role id="16" parent="1" name="aleksandr">
+      <ObjectId>10</ObjectId>
+      <SuperRole>1</SuperRole>
+      <Inherit>1</Inherit>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <ConnectionLimit>-1</ConnectionLimit>
+      <Replication>1</Replication>
+      <BypassRls>1</BypassRls>
+    </role>
+    <role id="17" parent="1" name="alex">
+      <ObjectId>16384</ObjectId>
+      <SuperRole>1</SuperRole>
+      <Inherit>1</Inherit>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="18" parent="1" name="feedbacks">
+      <ObjectId>19511</ObjectId>
+      <Inherit>1</Inherit>
+      <CanLogin>1</CanLogin>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="19" parent="1" name="kong">
+      <ObjectId>18945</ObjectId>
+      <Inherit>1</Inherit>
+      <CanLogin>1</CanLogin>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="20" parent="1" name="pg_execute_server_program">
+      <ObjectId>4571</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="21" parent="1" name="pg_monitor">
+      <ObjectId>3373</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="22" parent="1" name="pg_read_all_settings">
+      <ObjectId>3374</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="23" parent="1" name="pg_read_all_stats">
+      <ObjectId>3375</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="24" parent="1" name="pg_read_server_files">
+      <ObjectId>4569</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="25" parent="1" name="pg_signal_backend">
+      <ObjectId>4200</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="26" parent="1" name="pg_stat_scan_tables">
+      <ObjectId>3377</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="27" parent="1" name="pg_write_server_files">
+      <ObjectId>4570</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="28" parent="1" name="postgres">
+      <ObjectId>34660</ObjectId>
+      <Inherit>1</Inherit>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="29" parent="1" name="public_core">
+      <ObjectId>19512</ObjectId>
+      <Inherit>1</Inherit>
+      <CanLogin>1</CanLogin>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <schema id="30" parent="3" name="information_schema">
+      <ObjectId>13068</ObjectId>
+      <StateNumber>365</StateNumber>
+      <Owner>aleksandr</Owner>
+    </schema>
+    <schema id="31" parent="3" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+      <Comment>system catalog schema</Comment>
+      <StateNumber>358</StateNumber>
+      <Owner>aleksandr</Owner>
+    </schema>
+    <schema id="32" parent="3" name="pg_temp_1">
+      <ObjectId>11804</ObjectId>
+      <StateNumber>120</StateNumber>
+      <Owner>aleksandr</Owner>
+    </schema>
+    <schema id="33" parent="3" name="pg_toast">
+      <ObjectId>99</ObjectId>
+      <Comment>reserved schema for TOAST tables</Comment>
+      <StateNumber>1</StateNumber>
+      <Owner>aleksandr</Owner>
+    </schema>
+    <schema id="34" parent="3" name="pg_toast_temp_1">
+      <ObjectId>11805</ObjectId>
+      <StateNumber>120</StateNumber>
+      <Owner>aleksandr</Owner>
+    </schema>
+    <schema id="35" parent="3" name="public">
+      <ObjectId>2200</ObjectId>
+      <Comment>standard public schema</Comment>
+      <StateNumber>359</StateNumber>
+      <Owner>aleksandr</Owner>
+      <IntrospectionStateNumber>1942</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <access-method id="36" parent="3" name="btree">
+      <ObjectId>403</ObjectId>
+      <Comment>b-tree index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.bthandler</Handler>
+      <HandlerId>330</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="37" parent="3" name="hash">
+      <ObjectId>405</ObjectId>
+      <Comment>hash index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.hashhandler</Handler>
+      <HandlerId>331</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="38" parent="3" name="gist">
+      <ObjectId>783</ObjectId>
+      <Comment>GiST index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.gisthandler</Handler>
+      <HandlerId>332</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="39" parent="3" name="gin">
+      <ObjectId>2742</ObjectId>
+      <Comment>GIN index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.ginhandler</Handler>
+      <HandlerId>333</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="40" parent="3" name="spgist">
+      <ObjectId>4000</ObjectId>
+      <Comment>SP-GiST index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.spghandler</Handler>
+      <HandlerId>334</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="41" parent="3" name="brin">
+      <ObjectId>3580</ObjectId>
+      <Comment>block range index (BRIN) access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.brinhandler</Handler>
+      <HandlerId>335</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <extension id="42" parent="3" name="plpgsql">
+      <ObjectId>13350</ObjectId>
+      <Comment>PL/pgSQL procedural language</Comment>
+      <StateNumber>518</StateNumber>
+      <Version>1.0</Version>
+      <SchemaName>pg_catalog</SchemaName>
+      <SchemaId>11</SchemaId>
+    </extension>
+    <sequence id="43" parent="35" name="users_id_seq">
+      <ObjectId>35242</ObjectId>
+      <StateNumber>1926</StateNumber>
+      <Owner>alex</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <table id="44" parent="35" name="schema_migrations">
+      <ObjectId>35214</ObjectId>
+      <Owner>alex</Owner>
+      <StateNumber>1915</StateNumber>
+    </table>
+    <table id="45" parent="35" name="users">
+      <ObjectId>35244</ObjectId>
+      <Owner>alex</Owner>
+      <StateNumber>1926</StateNumber>
+    </table>
+    <column id="46" parent="44" name="version">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1915</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="47" parent="44" name="inserted_at">
+      <Position>2</Position>
+      <DataType>timestamp(0)|0s</DataType>
+      <StateNumber>1915</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <index id="48" parent="44" name="schema_migrations_pkey">
+      <ObjectId>35217</ObjectId>
+      <StateNumber>1915</StateNumber>
+      <ColNames>version</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="49" parent="44" name="schema_migrations_pkey">
+      <ObjectId>35218</ObjectId>
+      <StateNumber>1915</StateNumber>
+      <ColNames>version</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>schema_migrations_pkey</UnderlyingIndexName>
+    </key>
+    <column id="50" parent="45" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1926</StateNumber>
+      <DefaultExpression>nextval(&apos;users_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="51" parent="45" name="email">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>1926</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="52" parent="45" name="password_hash">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>1926</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="53" parent="45" name="inserted_at">
+      <Position>4</Position>
+      <DataType>timestamp(0)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1926</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="54" parent="45" name="updated_at">
+      <Position>5</Position>
+      <DataType>timestamp(0)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1926</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <index id="55" parent="45" name="users_pkey">
+      <ObjectId>35251</ObjectId>
+      <StateNumber>1926</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <index id="56" parent="45" name="users_email_index">
+      <ObjectId>35253</ObjectId>
+      <StateNumber>1926</StateNumber>
+      <ColNames>email</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="57" parent="45" name="users_pkey">
+      <ObjectId>35252</ObjectId>
+      <StateNumber>1926</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>users_pkey</UnderlyingIndexName>
+    </key>
+  </database-model>
+</dataSource>
