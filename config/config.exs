@@ -17,6 +17,10 @@ config :chatify_api, ChatifyApiWeb.Endpoint,
   render_errors: [view: ChatifyApiWeb.ErrorView, accepts: ~w(json)],
   pubsub: [name: ChatifyApi.PubSub, adapter: Phoenix.PubSub.PG2]
 
+config :chatify_api, ChatifyApi.Guardian,
+  issuer: "ChatifyApi",
+  secret_key: "LIj3MJBJGDg4Ycv4nkWWc9IoDibXnuWhYSo8PZYTkcZjCeDF0IpHDRJ6HmUN9sLk"
+
 # Configures Elixir's Logger
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",
