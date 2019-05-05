@@ -6,6 +6,12 @@ defmodule ChatifyApiWeb.FallbackController do
   """
   use ChatifyApiWeb, :controller
 
+  def call(conn, {:error, :unathorized}) do
+    conn
+    |> put_status(:unathorized)
+    |> json(%{error: "Login error"})
+  end
+
   def call(conn, {:error, %Ecto.Changeset{} = changeset}) do
     conn
     |> put_status(:unprocessable_entity)
@@ -19,4 +25,5 @@ defmodule ChatifyApiWeb.FallbackController do
     |> put_view(ChatifyApiWeb.ErrorView)
     |> render(:"404")
   end
+
 end

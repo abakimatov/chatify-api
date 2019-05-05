@@ -14,7 +14,7 @@
       <ObjectId>35213</ObjectId>
       <StateNumber>1914</StateNumber>
       <Owner>alex</Owner>
-      <IntrospectionStateNumber>1941</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1974</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
       <Relations>sequence|table|35242|35244|1
@@ -197,7 +197,7 @@
       <Comment>standard public schema</Comment>
       <StateNumber>359</StateNumber>
       <Owner>aleksandr</Owner>
-      <IntrospectionStateNumber>1942</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1975</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -273,7 +273,7 @@
     <table id="45" parent="35" name="users">
       <ObjectId>35244</ObjectId>
       <Owner>alex</Owner>
-      <StateNumber>1926</StateNumber>
+      <StateNumber>1946</StateNumber>
     </table>
     <column id="46" parent="44" name="version">
       <Position>1</Position>
@@ -336,20 +336,26 @@
       <StateNumber>1926</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <index id="55" parent="45" name="users_pkey">
+    <column id="55" parent="45" name="nickname">
+      <Position>6</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>1946</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="56" parent="45" name="users_pkey">
       <ObjectId>35251</ObjectId>
       <StateNumber>1926</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <index id="56" parent="45" name="users_email_index">
+    <index id="57" parent="45" name="users_email_index">
       <ObjectId>35253</ObjectId>
       <StateNumber>1926</StateNumber>
       <ColNames>email</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="57" parent="45" name="users_pkey">
+    <key id="58" parent="45" name="users_pkey">
       <ObjectId>35252</ObjectId>
       <StateNumber>1926</StateNumber>
       <ColNames>id</ColNames>
